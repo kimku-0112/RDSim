@@ -7,9 +7,10 @@
 ### Install && build
 
 ```bash
-cd ~/ros2_ws/src 
-git clone https://github.com/AuTURBO/RDSim.git
-cd ~/ros2_ws && colcon build --symlink-install && source install/local_setup.bash
+export ${HOME}/auturbo_ws >> ./bashrc
+cd ~/${WORKSPACE}/src 
+git clone https://github.com/kimku-0112/RDSim.git
+cd ~/${WORKSPACE} && colcon build --symlink-install && source install/local_setup.bash
 ```
 
 ```bash
