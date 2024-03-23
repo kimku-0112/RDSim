@@ -1,11 +1,20 @@
-## RDSim 
+=============================================================
+# RDSim: Robo Delivery Simulator
 
 ![small_sim_world](./fig/small_sim_world.png)
 ![gazebo_screen](./fig/gazebo_screen.png)
 ![sensor_display_rviz](./fig/sensor_display_rviz.png)
 
-### Install && build
+## Environment Settings
+### i) local: Install && build
 
+* Setting GAZEBO_RESOURCE_PATH
+```sh
+echo "export GAZEBO_RESOURCE_PATH=/usr/share/gazebo-11:$GAZEBO_RESOURCE_PATH" >> ~/.bashrc
+source ~/.bashrc
+```
+
+* RDSim build
 ```bash
 export ${HOME}/auturbo_ws >> ./bashrc
 cd ~/${WORKSPACE}/src 
@@ -32,6 +41,18 @@ sudo apt install -y ros-humble-teleop-twist-joy
 sudo apt install -y ros-humble-twist-mux
 ```
 
+
+### ii) docker
+
+> Docker environment tested on Ubuntu 22.04, nvidia
+> 
+
+```bash
+# in rdsim main directory
+cd ~/ros2_ws/src/RDSim/docker && ./run_command.sh 
+```
+
+## Execute RDSim
 ### Gazebo world launch
 
 > Gazebo 맵만 실행시킬 경우
@@ -41,7 +62,7 @@ sudo apt install -y ros-humble-twist-mux
 ros2 launch rdsim_gazebo rdsim_gazebo_world.launch.py  
 ```
 
-Robot Display launch 
+### Robot Display launch 
 
 > Gazebo 없이 로봇의 tf를 확인하고 싶을 경우
 > 
@@ -49,6 +70,7 @@ Robot Display launch
 ```bash
 ros2 launch rdsim_description rdsim_description.launch.py 
 ```
+
 
 ---
 
