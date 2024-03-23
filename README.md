@@ -14,21 +14,21 @@ cd ~/ros2_ws && colcon build --symlink-install && source install/local_setup.bas
 
 ```bash
 sudo apt-get update
-sudo apt install ros-humble-robot-localization
-sudo apt install ros-humble-imu-filter-madgwick
-sudo apt install ros-humble-controller-manager
-sudo apt install ros-humble-controller-manager
-sudo apt install ros-humble-diff-drive-controller
-sudo apt install ros-humble-imu-filter-madgwick
-sudo apt install ros-humble-interactive-marker-twist-server
+sudo apt install -y ros-humble-robot-localization
+sudo apt install -y ros-humble-imu-filter-madgwick
+sudo apt install -y ros-humble-controller-manager
+sudo apt install -y ros-humble-controller-manager
+sudo apt install -y ros-humble-diff-drive-controller
+sudo apt install -y ros-humble-imu-filter-madgwick
+sudo apt install -y ros-humble-interactive-marker-twist-server
 # jackal-description 패키지는 아래의 추가 사항 참고
-sudo apt install ros-humble-joint-state-broadcaster
-sudo apt install ros-humble-joint-trajectory-controller
-sudo apt install ros-humble-joy
-sudo apt install ros-humble-robot-localization
-sudo apt install ros-humble-robot-state-publisher
-sudo apt install ros-humble-teleop-twist-joy
-sudo apt install ros-humble-twist-mux
+sudo apt install -y ros-humble-joint-state-broadcaster
+sudo apt install -y ros-humble-joint-trajectory-controller
+sudo apt install -y ros-humble-joy
+sudo apt install -y ros-humble-robot-localization
+sudo apt install -y ros-humble-robot-state-publisher
+sudo apt install -y ros-humble-teleop-twist-joy
+sudo apt install -y ros-humble-twist-mux
 ```
 
 ### Gazebo world launch
