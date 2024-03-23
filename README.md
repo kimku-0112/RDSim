@@ -1,4 +1,3 @@
-=============================================================
 # RDSim: Robo Delivery Simulator
 
 ![small_sim_world](./fig/small_sim_world.png)
